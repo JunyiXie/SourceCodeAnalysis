@@ -24,7 +24,7 @@ Aspects是一个面向切面编程的库。
 ## 核心实现
 Aspects的核心实现就是利用Runtime中的消息分发机制如图：
 
-![原理](Aspects-源码分析/原理.png)
+![原理](https://github.com/JunyiXie/SourceCodeAnalysis/raw/master/photos/%E5%8E%9F%E7%90%86.png)
 
 **Aspects通过把selector的方法替换为msg_forward方法转发 转而调用 forwardInvocation（forwardInvocation的实现被Aspects替换，将原来的方法实现与添加的实现组合在了一起）**
 
